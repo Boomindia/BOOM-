@@ -11,5 +11,7 @@ export default function ShortsPage() {
         <VideoFeed showMixedContent={false} />
       </div>
     </div>
+
+    
   )
 }

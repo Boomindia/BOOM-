@@ -289,8 +289,6 @@ export default function VideoFeed({ showMixedContent = false, longVideoOnly = fa
                       <Users size={12} className="mr-1" />
                       {video.series}
                     </Badge>
-
-
                   {/* Episode Dropdown */}
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>

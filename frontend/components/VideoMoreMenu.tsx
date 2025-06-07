@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import { X, Settings, Gauge, Share, LinkIcon, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -30,15 +29,16 @@ export default function VideoMoreMenu({ isOpen, onClose, videoId }: VideoMoreMen
     const videoUrl = `https://boom.app/video/${videoId}`
     console.log(`Sharing to ${platform}:`, videoUrl)
 
-    // In a real app, you would integrate with each platform's sharing API
+    //integrate with each platform's sharing API
     if (platform === "WhatsApp") {
       window.open(`https://wa.me/?text=${encodeURIComponent(videoUrl)}`)
-    } else if (platform === "Telegram") {
+    }
+    else if (platform === "Telegram") {
       window.open(`https://t.me/share/url?url=${encodeURIComponent(videoUrl)}`)
-    } else if (platform === "Twitter") {
+    }
+    else if (platform === "Twitter") {
       window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(videoUrl)}`)
     }
-    // Add more platform integrations as needed
   }
 
   const copyLink = () => {

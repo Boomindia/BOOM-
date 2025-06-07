@@ -14,12 +14,10 @@ export default function TopHeader() {
               <Wallet size={20} />
             </Button>
           </Link>
-
           <Button variant="ghost" size="sm" className="relative">
             <Bell size={20} />
             <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></div>
           </Button>
-        
       </div>
     </div>
   )

@@ -173,7 +173,9 @@ export default function AuthPage() {
           </div>
         </div>
       </div>
-    )
+    )     
+
+     
   }
 
   if (step === "otp") {

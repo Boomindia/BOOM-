@@ -41,7 +41,6 @@ export default function Sidebar() {
         <SidebarItem icon={<Video size={22} />} label="Short Videos" href="/shorts" />
         <SidebarItem icon={<Film size={22} />} label="Long Videos" href="/long" />
         <SidebarItem icon={<Upload size={22} />} label="Upload" href="/upload" />
-        <SidebarItem icon={<Wallet size={22} />} label="Wallet" href="/wallet" />
         <SidebarItem icon={<User size={22} />} label="Profile" href="/profile" />
       </div>
 

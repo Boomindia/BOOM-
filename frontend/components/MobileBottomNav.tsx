@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Video, Plus, Search, User, Wallet } from "lucide-react"
+import { Home, Video, Plus, Search, User } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
@@ -10,16 +10,15 @@ export default function MobileBottomNav() {
 
   const navItems = [
     { icon: Home, label: "Home", href: "/" },
-    { icon: Video, label: "Long", href: "/long" },
+    { icon: Video, label: "Shorts", href: "/shorts" },
     { icon: Plus, label: "Upload", href: "/upload" },
     { icon: Search, label: "Search", href: "/search" },
-    { icon: Wallet, label: "Wallet", href: "/wallet" },
     { icon: User, label: "Profile", href: "/profile" },
   ]
 
   return (
-    <div className="mobile-bottom-nav items-center justify-center fixed bottom-0 left-0 right-0 bg-card border-t border-border z-50 md:hidden">
-      <div className="flex justify-around items-center py-2 gap-4">
+    <div className="mobile-bottom-nav fixed bottom-0 left-0 right-0 bg-card border-t border-border z-50 md:hidden">
+      <div className="flex justify-around items-center py-2">
         {navItems.map((item) => {
           const Icon = item.icon
           const isActive = pathname === item.href
